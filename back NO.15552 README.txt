@@ -1,0 +1,2 @@
+#ios_base::sync_with_studio(false)
+- C와 C++ 의 I/O stream 을 분리시키는 역할
