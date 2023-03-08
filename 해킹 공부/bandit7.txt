@@ -1,0 +1,13 @@
+과제 : data.txt 안에 millionth 라는 단어 옆에 있는 패스워드를 찾아라 
+
+필터링을 위한 리눅스 명령어 grep 을 사용하면 된다. 
+
+grep [옵션] [표현식] [파일명]
+
+| : pipe 파이프는앞에서 나온 명령의 결과를 두번째 명령에서 사용함 
+
+A|B : A 의 결과를 B 에서 사용 
+
+따라서 명령어는 cat data.txt | grep millionth 
+
+pw : TESKZC0XvTetK0S9xNwm25STk5iWrBvP
