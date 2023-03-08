@@ -1,0 +1,32 @@
+조건 
+
+user == bandit7
+
+group == bandit6
+
+size == 33 bytes
+
+find 명령어 이용 
+
+-> find / -user bandit7 -group bandit6 -size 33c 
+
+-> 너무 많은 결과 값 
+
+리눅스 file Descriptor 
+-> 프로세스에서 특정 파일에 접근할 때 사용하는 추상적인 값
+
+일반적으로 0,1,2 번 파일 디스크립터는 특수한 목적으로 사용 
+
+0: standard input, 표준입력 
+
+1 : standard output, 표준출력
+
+2 : standard error, 표준 에러 
+
+위에서 사용한 find 명령어에서 발생하는 출력들은 permission denied, 표준 에러 이다. 
+
+따라서 에러를 null 로 보내는 옵션을 추가 하여 
+
+find / -user bandit7 -group bandit6 -size 33c 2>/dev/null 이라는 명령어로 파일을 찾는다.
+
+pw = z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
